@@ -6,7 +6,6 @@ import Message from "../components/Message";
 import Loader from "../components/Loader";
 import { register } from "../actions/userActions";
 import FormContainer from "../components/FormContainer";
-import { userRegisterReducer } from "../reducers/userReducers";
 
 const Register = ({ location, history }) => {
   const [name, setName] = useState("");
