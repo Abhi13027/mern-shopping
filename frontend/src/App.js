@@ -7,6 +7,8 @@ import { BrowserRouter as Router, Route } from "react-router-dom";
 import Product from "./pages/Product";
 import Cart from "./pages/Cart";
 import Login from "./pages/Login";
+import Register from "./pages/Register";
+
 function App() {
   return (
     <Router>
@@ -14,6 +16,7 @@ function App() {
       <main className="py-3">
         <Container>
           <Route path="/login" component={Login}></Route>
+          <Route path="/register" component={Register}></Route>
           <Route path="/product/:id" component={Product}></Route>
           <Route path="/cart/:id?" component={Cart}></Route>
           <Route exact path="/" component={Home}></Route>
