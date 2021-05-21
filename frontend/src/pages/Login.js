@@ -55,7 +55,7 @@ const Login = ({ location, history }) => {
           ></Form.Control>
         </Form.Group>
 
-        <Button type="submit" variant="primary">
+        <Button className="mt-2" type="submit" variant="primary">
           Sign In
         </Button>
       </Form>

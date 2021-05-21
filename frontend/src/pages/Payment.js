@@ -1,7 +1,7 @@
 import React, { useState } from "react";
-import { Form, Button, FormControl, Col } from "react-bootstrap";
+import { Form, Button, Col } from "react-bootstrap";
 import { useDispatch, useSelector } from "react-redux";
-import { saveShippingAddress, savePaymentMethod } from "../actions/cartActions";
+import { savePaymentMethod } from "../actions/cartActions";
 import CheckoutSteps from "../components/CheckoutSteps";
 import FormContainer from "../components/FormContainer";
 
@@ -42,7 +42,7 @@ const Payment = ({ history }) => {
             ></Form.Check>
           </Col>
         </Form.Group>
-        <Button type="submit" variant="primary">
+        <Button className="mt-2" type="submit" variant="primary">
           Continue
         </Button>
       </Form>

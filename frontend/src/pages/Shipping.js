@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { Form, Button, FormControl } from "react-bootstrap";
+import { Form, Button } from "react-bootstrap";
 import { useDispatch, useSelector } from "react-redux";
 import { saveShippingAddress } from "../actions/cartActions";
 import CheckoutSteps from "../components/CheckoutSteps";
@@ -68,7 +68,7 @@ const Shipping = ({ history }) => {
             onChange={(e) => setCountry(e.target.value)}
           ></Form.Control>
         </Form.Group>
-        <Button type="submit" variant="primary">
+        <Button className="mt-2" type="submit" variant="primary">
           Continue
         </Button>
       </Form>
